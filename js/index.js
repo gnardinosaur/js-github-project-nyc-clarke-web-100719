@@ -55,7 +55,7 @@ function fetchUser(username) {
 function renderRepos(repo){
     let oneRepo = `
         <li id=${repo.id}>
-        <h2>${repo.name}</h2>
+        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
         </li>
     `
     repoList.innerHTML += oneRepo
